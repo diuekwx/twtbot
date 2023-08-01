@@ -15,7 +15,7 @@ def api():
 client = tweepy.Client(keys.bearer, keys.api_key, keys.api_secret, keys.access_token, keys.access_token_secret)
 
 
-t = TenGiphPy.Giphy("TXH602j1ntlCLpyhagScRo8lfKqEA46y")
+t = TenGiphPy.Giphy(key)
 
 url = t.random(tag="ghibli")['data']['images']['downsized_large']['url']
 
